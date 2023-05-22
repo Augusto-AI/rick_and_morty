@@ -8,7 +8,6 @@
 // [NOTA]: puedes guiarte con la documentación de React para realizar este ejercicio.
 
 // import Card from './Card';
-import Card from '../card/Card.jsx';
 
 export default function Cards({characters, onClose}) {
    const cardsContainer = {
@@ -16,6 +15,7 @@ export default function Cards({characters, onClose}) {
       flexWrap: "wrap",
       justifyContent: "space-evenly"
    }
+
    console.log(characters);
    return (
       <div style={cardsContainer}>

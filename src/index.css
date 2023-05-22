@@ -14,5 +14,8 @@ code {
     monospace;
 }
 
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
 /* <a href="https://www.freepnglogos.com/pics/rick-and-morty" title="Image from freepnglogos.com">
 <img src="https://www.freepnglogos.com/uploads/rick-and-morty/rick-and-morty-background-rick-morty-and-man-sky-mashup-wallpaper-taken-from-4.png" width="200" alt="rick and morty background rick morty and man sky mashup wallpaper taken from" /></a> */

@@ -1,12 +1,17 @@
 import React from "react";
-import SearchBar from "../searchBar/SearchBar";
-import Rick1 from "../nav/img/Rick1.png"
+import SearchBar from "../searchBar/SearchBar.jsx";
+import { NavLink } from "react-router-dom";
 
 export default function Nav(props) {
-    return (
+    return(
         <div>
-            <img style ={{height: '350px' }}src={Rick1} alt="Rick and Morty" />
+            <NavLink to="/home">
+                <button>Home</button>
+            </NavLink>
+            <NavLink to="/about">
+                <button>About</button>
+            </NavLink>
             <SearchBar onSearch={props.onSearch} />
         </div>
-    );
+    )
 }

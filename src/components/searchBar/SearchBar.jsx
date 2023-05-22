@@ -1,3 +1,6 @@
+
+ 
+
 import { useState } from "react";
 import styles from "./SearchBar.module.css";
 
@@ -11,9 +14,7 @@ export default function SearchBar(props) {
    }
 
    return (
-      <div className={styles.container} >
-         {/* <input type='search' />
-         <button onClick={props.onSearch}>Agregar</button> */}
+      <div className={styles.container}>
          <input
             type="text"
             name="search"
@@ -24,5 +25,3 @@ export default function SearchBar(props) {
       </div>
    );
 }
-
-
