@@ -1,14 +1,22 @@
 import React from 'react';
+import augusto from '../assets/Img/augusto.jpg';
+import styles from './About.module.css';
+
+
+
+
+
+
 
 export default function About(props) {
   return (
-    <div style={{ backgroundColor: 'lightblue' }}>
+    <div >
       <h1>About Me</h1>
-      <img src="my-photo.jpg" alt="My Photo" />
       <p>
-        Hi there! My name is [Augusto Herrera] and I'm a [Js Fullstack Developer]. I love
-        coding and building things with the lattes technologies.
+        Hi there! My name is Augusto Herrera, and I'm a Js Fullstack Developer. I love
+        coding and building things with the lattes technologies. Wlcome to my App.
       </p>
+      <img nameclass={styles.img} src={augusto} alt="My Photo" />
     </div>
   );
 }

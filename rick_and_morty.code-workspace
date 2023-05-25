@@ -4,5 +4,8 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"genieai.enableConversationHistory": true,
+		"genieai.openai.maxTokens": 4000
+	}
 }

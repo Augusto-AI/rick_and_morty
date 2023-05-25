@@ -7,6 +7,9 @@ import Cards from './components/cards/Cards.jsx';
 import Detail from "./components/detail/Detail.jsx";
 import Form from "./components/form/Form.jsx";
 import Nav from './components/nav/Nav.jsx';
+import Favorites from './components/favorites/Favorites.jsx';
+
+
 
 
 function App() {
@@ -29,7 +32,12 @@ function App() {
       !access && navigate('/');
    }, [access]);
 
-   const onSearch = id => { // 2 => { id: 2 }
+   const onSearch = id => { // 2 => {
+      const characterID = characters.filter(character => character.id === Number(id));
+      console.log(characterID);
+      if (characterID.length > 0) return alert ("The character alredy exists")
+      if (id < 1 || id > 826) return alert ("¡There is no character with this enteres ID!");
+      
       axios (`https://rickandmortyapi.com/api/character/${id}`)
          .then(({ data }) => {
             // console.log(data);
@@ -58,11 +66,10 @@ function App() {
          <hr />
          <Routes>
             <Route exact path="/" element={<Form login={login} />} />
-            <Route path="/home" element={
-               <Cards characters={characters} onClose={onClose} />
-            }/>
+            <Route exact path="/home" element = {<Cards characters={characters} onClose={onClose} numberOfCards={characters.length}/>} />
             <Route path="/about" element={<About />} />
             <Route path="/detail/:id" element={<Detail />} />
+            <Route path="/favorites" element={<Favorites onClose={onClose} />} />
          </Routes>
          
       </div>

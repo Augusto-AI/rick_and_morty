@@ -4,6 +4,7 @@
 import { useState } from "react";
 import styles from "./SearchBar.module.css";
 
+
 export default function SearchBar(props) {
    const [id, setId] = useState("");
 
@@ -20,8 +21,10 @@ export default function SearchBar(props) {
             name="search"
             id="search"
             onChange={handleChange}
+            placeholder="Busca tu personaje por ID"
          />
-         <button onClick={() => props.onSearch(id)}>Agregar</button>
+         <button className={styles.botton2} onClick={() => props.onSearch(id)}>Agregar</button>
+           
       </div>
    );
 }

@@ -14,7 +14,7 @@ export default function validation(input) {
         error.email = "Debe ingresar un email válido!";
     }
     if(!input.email) {
-        error.email = "Debe ingresar un nombre!";
+        error.email = "Email";
     }
     if(input.email.length > 35) {
         error.email = "No mayor a 35 caracteres!"
@@ -23,7 +23,7 @@ export default function validation(input) {
         error.password = "Al menos un número!";
     }
     if(input.password.length < 6 || input.password.length > 10) {
-        error.password = "Entre 6 y 10 caracteres!"
+        error.password = "Password"
     }
     return error;
 }
