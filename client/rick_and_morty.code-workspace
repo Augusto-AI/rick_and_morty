@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"genieai.enableConversationHistory": true,
+		"genieai.openai.maxTokens": 4000
+	}
+}
