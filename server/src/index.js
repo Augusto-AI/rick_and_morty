@@ -17,9 +17,7 @@ server.use((req, res, next) => {
     );
     next();
  });
-
  server.use(express.json());
- 
  server.use(morgan("dev"));
 
  // localhost:3001//rickandmorty/fav
