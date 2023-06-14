@@ -35,7 +35,7 @@ export default function Form(props) {
     }
 
     return(
-        <div className={styles.card} >
+        <div className={styles.button2} >
             <div className={styles.card2} >
             <form className={styles.button2}onSubmit={handleSubmit}>
                 <h1>Igresa a tu cuenta</h1>

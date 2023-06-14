@@ -26,7 +26,7 @@ function Card(props) {
   }, [props.myFavorites, props.id]);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.button2}>
       <div className={styles.buttonContainer}>
         {isFav ? (
           <button onClick={handleFavorite}>❤️</button>

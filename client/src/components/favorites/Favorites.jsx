@@ -35,7 +35,7 @@ function Favorites(props) {
     <div>
       <select 
         onChange={handleOrder}
-        className={styles.button1}
+        className={styles.button2}
         value={aux ? 'A' : 'D'}
       >
         <option value="A">Ascendente</option>

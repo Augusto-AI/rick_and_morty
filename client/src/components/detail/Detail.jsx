@@ -23,7 +23,7 @@ export default function Detail(props) {
 
      console.log("character desde Detail: ", character);
     return (
-        <div className={styles.dataContainer}>
+        <div className={styles.button2}>
             
             <h3>CHARACTER</h3>
             <h1>{character.name}</h1>

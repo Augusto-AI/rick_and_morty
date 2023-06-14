@@ -10,11 +10,11 @@ import styles from './About.module.css';
 
 export default function About(props) {
   return (
-    <div >
+    <div className={styles.card}>
       <h1>About Me</h1>
       <p>
         Hi there! My name is Augusto Herrera, and I'm a Js Fullstack Developer. I love
-        coding and building things with the lattes technologies. Wlcome to my App.
+        coding and building things with the lattes technologies. Welcome to my App.
       </p>
       <img nameclass={styles.img} src={augusto} alt="My Photo" />
     </div>
