@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import styles from './Card.module.css';
@@ -6,6 +6,7 @@ import { addFav, removeFav } from '../../redux/actions';
 
 function Card(props) {
   const [isFav, setIsFav] = useState(false);
+  console.log(props); 
 
   const handleFavorite = () => {
     if (isFav) {
@@ -16,6 +17,7 @@ function Card(props) {
       setIsFav(true);
     }
   };
+
 
   useEffect(() => {
     props.myFavorites.forEach((fav) => {

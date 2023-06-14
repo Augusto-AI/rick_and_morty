@@ -8,18 +8,18 @@ const initialState = {
   errors: false,
 };
 
-export default function reducers(state = initialState, { type, payload }) {
-  switch (type) {
+export default function reducers(state = initialState, action ) {
+  switch (action.type) {
     // REDUCER | ADD_FAV
     case "ADD_FAV":
-      return { ...state, myFavorites: payload, allCharacters: payload };
+      return { ...state, myFavorites: action.payload, allCharacters: action.payload };
 
     // REDUCER | REMOVE_FAV
     case "REMOVE_FAV":
-      return { ...state, myFavorites: payload };
+      return { ...state, myFavorites: action.payload };
 
     case FILTER:
-      if (payload === "all")
+      if (action.payload === "all")
         return {
           ...state,
           myFavorites: state.allCharacters,
@@ -27,7 +27,7 @@ export default function reducers(state = initialState, { type, payload }) {
 
       const allCharactersCopy = [...state.allCharacters];
       const filteredCharacters = allCharactersCopy.filter(
-        (character) => character.gender === payload
+        (character) => character.gender === action.payload
       );
       return {
         ...state,
@@ -36,9 +36,9 @@ export default function reducers(state = initialState, { type, payload }) {
 
     case ORDER:
       const orderedCharacters = [...state.allCharacters].sort((a, b) => {
-        if (payload === "A") {
+        if (action.payload === "A") {
           return a.id - b.id;
-        } else if (payload === "D") {
+        } else if (action.payload === "D") {
           return b.id - a.id;
         }
         return 0;

@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import augusto from '../assets/Img/augusto.jpg';
+
 import styles from './About.module.css';
 
 
@@ -16,7 +17,7 @@ export default function About(props) {
         Hi there! My name is Augusto Herrera, and I'm a Js Fullstack Developer. I love
         coding and building things with the lattes technologies. Welcome to my App.
       </p>
-      <img nameclass={styles.img} src={augusto} alt="My Photo" />
+    
     </div>
   );
 }

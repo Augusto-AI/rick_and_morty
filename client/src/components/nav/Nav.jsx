@@ -41,7 +41,7 @@ export default function Nav(props) {
             className={styles.button2} >
             <SearchBar 
             className={styles.form} 
-            onSearch={props.onSearch} />
+            onSearch={onSearch} />
             </NavLink>
 
         </div>

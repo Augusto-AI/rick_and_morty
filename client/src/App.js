@@ -165,7 +165,7 @@ function App() {
         <Route
           exact
           path="/favorites"
-          element={<Favorites onClose={onClose} />}
+          element={<Favorites/>}
         />
       </Routes>
     </div>
