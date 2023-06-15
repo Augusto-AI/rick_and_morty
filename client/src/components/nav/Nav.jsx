@@ -28,7 +28,7 @@ export default function Nav(props) {
 
             <NavLink 
             className={styles.button2} to="/Favorites" >
-            Favotires
+            Favorites
             </NavLink>
             
             <NavLink 

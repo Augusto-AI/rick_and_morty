@@ -35,11 +35,11 @@ export default function Form(props) {
     }
 
     return(
-        <div className={styles.button2} >
-            <div className={styles.card2} >
-            <form className={styles.button2}onSubmit={handleSubmit}>
-                <h1>Igresa a tu cuenta</h1>
+        <div className={styles.field} >
+            <div className={styles.fiend} >
+            <form className={styles.field}onSubmit={handleSubmit}>
             <img className={styles.img} src={Rick1} alt="rick1" />
+                <h1>Login </h1>
                 <input
                     type="text"
                     name="email"
